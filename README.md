@@ -1,7 +1,7 @@
 # MovieFlow
 
 Added new team member: Andreea
-
+Diana
 // introduceti aici mesajul de la pct 6
 
 1.Se copiaza link-ul de la repository (Butonul verde cu inscriptia CODE -> langa link este o casuta care copiaza link-ul de la repository)
