@@ -1,3 +1,4 @@
+Added new team member : Paul
 Added new team member: Andreea
 Added new team member: Diana
 // introduceti aici mesajul de la pct 6
