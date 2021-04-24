@@ -1,5 +1,7 @@
 Added new team member: Andreea
 Added new team member: Diana
+Added new team member: Georgiana
+
 // introduceti aici mesajul de la pct 6
 
 Trebuie sa acceptati invitatia care v-a fost trimisa pe mail de la mine. 
