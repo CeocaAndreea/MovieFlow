@@ -1,3 +1,4 @@
+Added new team member : Paul
 Added new team member: Andreea
 Added new team member: Diana
 Added new team member: Georgiana
