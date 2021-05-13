@@ -1,0 +1,184 @@
+﻿@{ ViewData["Title"] = "Contact Us";}
+<!--<div class="row">
+    <div class="column-left-right" style="background-color:#aaa;"></div>
+    <div class="column-middle" style="background-color:#bbb;">
+        <h1>About Us and Movie Flow!</h1>
+        <h>
+            <ul>
+                We are Code Heroes, a group of 4 students from TUCN, studying Automation and Computer Science and like every one we love
+                watch movies. Movie Flow was created for people like us who want to keep up with the latest movies, TV Series but also the
+                most up-to-date information about your favorite actors.
+            </ul>
+        </h>
+
+        <h2>Code Heroes Team: </h2>
+        <ul>
+            <li>Ceoca Andrea is our team leader</li>
+            <li>Ionesi Diana is our developper</li>
+            <li>Ciciovean Paul is our developper</li>
+            <li>Calin Georgiana is our tester</li>
+        </ul>
+        <h2>You can contact us to e-mail:</h2>
+        <ul>
+            <li>Andreea using email: <a href="mailto:ceoca.andrea@gmail.com">Send Email</a></li>
+            <li>Diana using email: <a href="mailto: diana_ionesi@yahoo.com">Send Email</a></li>
+            <li>Paul using email:<a href="mailto: ciciovean_paul@yahoo.com">Send Email</a></li>
+            <li>Georgiana using email: <a href="mailto: calingeorgiana14@gmail.com">Send Email</a></li>
+        </ul>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="~/Images/andreea.jpg" style="width:35%" height=220 />
+                <div class="text"><b> Ceoca Andreea</b></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="~/Images/diana.jpg" style="width:35%" height=220 />
+                <div class="text"><b>Ionesi Diana</b></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="~/Images/paul.jpg" style="width:35%" height=220 />
+                <div class="text"><b>Ciciovean Paul</b></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="~/Images/georgiana.jpg" style="width:35%" height=220 />
+                <div class="text"><b>Calin Georgiana</div></b>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </div>
+    <div class="column-left-right" style="background-color:#ccc;"> </div>
+
+</div>-->
+<!--
+<script>var slideIndex = 0;
+    showSlides();
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+        // Get the elements with class="column"
+        var elements = document.getElementsByClassName("column");
+
+        // Declare a loop variable
+        var i;
+
+        // Full-width images
+        function one() {
+            for (i = 0; i < elements.length; i++) {
+                elements[i].style.msFlex = "100%";  // IE10
+                elements[i].style.flex = "100%";
+            }
+        }
+
+    }</script>
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/contact.css">
+</head>
+<body>
+    <div class="column-left-right" style="background-color:#aaa;"></div>
+    <div class="column-middle" style="background-color:#bbb;">
+        <h1>About Us and Movie Flow!</h1>
+        <h>
+            <ul>
+                We are Code Heroes, a group of 4 students from TUCN, studying Automation and Computer Science and like every one we love
+                watch movies. Movie Flow was created for people like us who want to keep up with the latest movies, TV Series but also the
+                most up-to-date information about your favorite actors.
+            </ul>
+        </h>
+        <h2>Code Heroes Team: </h2>
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <img src="~/Images/andreea.jpg" style="width:100%">
+                    <div class="container">
+                        <h2>Andreea Ceoca</h2>
+                        <p class="title">Team Lider</p>
+                        <p>
+                            Hi, I am Andreea and I am team player. I am outgoing, dedicated, and open-minded.
+                            I get across to people and adjust to changes with ease.
+                            I believe that a person should work on developing their professional skills and learning new things all the time.
+                        </p>
+                        <p>ceoca.andreea@gmail.com</p>
+                        <p><button class="button">Contact Me</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="~/Images/georgiana.jpg" style="width:100%">
+                    <div class="container">
+                        <h2>Georgiana Calin</h2>
+                        <p class="title">Tester</p>
+                        <p>
+                            Hello, I am a person who is positive about every aspect of life.
+                            I am friendly and energic person and I like to work in a team.
+                            I like to learn new things in any field and I consider that the most important thing in life
+                            is to live every moment at maximum intensity because it will never return
+                        </p>
+                        <p>calingeorgiana14@gmail.com</p>
+                        <p><button class="button">Contact Me</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="~/Images/diana.jpg" style="width:100%">
+                    <div class="container">
+                        <h2>Diana Ionesi</h2>
+                        <p class="title">Developer</p>
+                        <p>
+                            Hi, I am Diana I enjoy turning complex problems into simple, beautiful and intuitive designs.
+                            When I'm not pushing pixels or coding, you'll find me cooking,
+                            gardening or walking out in the park with my friends.
+                        </p>
+                        <p>diana_ionesi@yahoo.com</p>
+                        <p><button class="button">Contact Me</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <img src="~/Images/paul.jpg" style="width:100%">
+                    <div class="container">
+                        <h2>Paul Ciciovean</h2>
+                        <p class="title">Developer</p>
+                        <p>Hi, I'm Paul, I'm a developer in this project, I like challenges and working in team.</p>
+                        <p>ciciovean_paul@yahoo.com</p>
+                        <p><button class="button">Contact Me</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

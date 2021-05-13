@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj": {}
+    "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj": {
+    "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
+        "projectUniqueName": "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
         "projectName": "MovieFlow",
-        "projectPath": "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
+        "projectPath": "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
         "packagesPath": "C:\\Users\\Ceoca Andreea\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\obj\\",
+        "outputPath": "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ceoca Andreea\\AppData\\Roaming\\NuGet\\NuGet.Config",
