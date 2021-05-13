@@ -22,15 +22,17 @@ namespace MovieFlow.Controllers
         {
             return View();
         }
-
-        public IActionResult Privacy()
+        public IActionResult Contact()
         {
-            ViewBag.Message = "Security is everybody's business.";
-            ViewBag.MyFavoriteColor = "Green";
             return View();
         }
 
-        public IActionResult ContactUs()
+        public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Search()
         {
             return View();
         }

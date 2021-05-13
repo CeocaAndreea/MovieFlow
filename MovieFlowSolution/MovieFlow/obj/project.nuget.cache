@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6pTf5eFuQ+c5v0E8WofZCYYZIBKJJHsKVSc8yQ5P3mRwFEQ4p/dgp6oU4E6ZwVPu5YkLJzUi700pr9DW9z1YsA==",
+  "dgSpecHash": "589AqcmrYqvHIj4xgIuyA35a30GxHArpSN3KE3WXDbh3lWPEwkdSC3WKnHmepv340GqDwmzvGIucKDVbdw9sXw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ceoca Andreea\\Desktop\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
+  "projectFilePath": "D:\\Facultate an III semestrul 2\\II (Informatica industriala) - H.Valean\\Proiect\\MovieFlow\\MovieFlowSolution\\MovieFlow\\MovieFlow.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ceoca Andreea\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Ceoca Andreea\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.4\\microsoft.aspnetcore.cryptography.internal.5.0.4.nupkg.sha512",

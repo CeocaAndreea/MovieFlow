@@ -15,14 +15,8 @@ namespace MovieFlow.Controllers
 
         public IActionResult Message()
         {
-            return View("message");
-        }
-
-        public IActionResult Welcome(string name, int secretNumber = 13)
-        {
-            ViewBag.Name = name;
-            ViewBag.Secret = secretNumber;
             return View();
         }
+
     }
 }
