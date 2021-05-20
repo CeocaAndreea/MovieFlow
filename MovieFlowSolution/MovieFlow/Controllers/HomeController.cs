@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 
 namespace MovieFlow.Controllers
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

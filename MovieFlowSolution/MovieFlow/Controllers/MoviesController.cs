@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieFlow.Controllers
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
     public class MoviesController : Controller
     {
         public IActionResult Index()
@@ -17,6 +18,5 @@ namespace MovieFlow.Controllers
         {
             return View();
         }
-
     }
 }

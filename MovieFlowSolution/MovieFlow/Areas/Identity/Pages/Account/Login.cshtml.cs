@@ -57,6 +57,12 @@ namespace MovieFlow.Areas.Identity.Pages.Account
 
         public async Task OnGetAsync(string returnUrl = null)
         {
+            //Redirectionare dupa autentificare
+            /*if (User.Identity.IsAuthenticated)
+            {
+                Response.Redirect("/Home/Index");
+            }*/
+
             if (!string.IsNullOrEmpty(ErrorMessage))
             {
                 ModelState.AddModelError(string.Empty, ErrorMessage);
