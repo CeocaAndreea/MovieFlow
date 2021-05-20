@@ -7,6 +7,10 @@
 
 <form asp-route-returnUrl="@Model.ReturnUrl" method="post">
     <div asp-validation-summary="All" class="text-danger"></div>
+    <div class="login-form-icon">
+        <i class="fas fa-user-circle fa-9x text-secondary"></i>
+        <h2>Hello,you are not sign up yet? Sign up for more movies,TvSeries and last information about your favourite actors!</h2>
+    </div>
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
@@ -46,7 +50,7 @@
     </div>
 
 
-    <button type="submit" class="btn btn-primary">Register</button>
+    <button type="submit" class="btn btn-primary btn-block">Register</button>
 </form>
 
 @section Scripts {

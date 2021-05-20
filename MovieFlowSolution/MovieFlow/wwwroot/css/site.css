@@ -155,17 +155,18 @@ body {
 /* Create three equal columns that floats next to each other */
 .column-left-right {
     float: left;
-    width: 15%;
-    padding: 10px;
-    height: 2000px; /* Should be removed. Only for demonstration */
-    opacity: .3; /*asa setex transparenta */
+    width: 6%;
+    height: 3000px;
+    opacity: .3;
+    background-color: #bbb;
 }
 
 .column-middle {
     float: left;
-    width: 70%;
+    width: 87%;
     padding: 10px;
-    height: 2000px; /* Should be removed. Only for demonstration */
+    height: 3000px;
+    background-color: #aaa;
 }
 
 /* Clear floats after the columns */
@@ -276,16 +277,16 @@ img {
     border: none;
     outline: none;
     padding: 10px 16px;
-    background-color: #f1f1f1;
+    background-color: #333333;
     cursor: pointer;
     font-size: 18px;
 }
 
     .btn:hover {
-        background-color: #ddd;
+        background-color: #ff0000;
     }
 
     .btn.active {
-        background-color: #666;
+        background-color: #ff0000;
         color: white;
     }

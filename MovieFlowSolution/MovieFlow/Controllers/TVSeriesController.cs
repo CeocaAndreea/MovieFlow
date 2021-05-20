@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieFlow.Controllers
 {
+    [Microsoft.AspNetCore.Authorization.Authorize]
     public class TVSeriesController : Controller
     {
         public IActionResult Index()
