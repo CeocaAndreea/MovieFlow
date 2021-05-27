@@ -1,0 +1,119 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/SearchFormat.css" />
+    <link href="~/App_Themes/SmokeAndGlass/SmokeAndGlass.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+    <div class="row">
+        <div class="column-left-right"></div>
+        <div class="column-middle">
+            <h1>@ViewBag.Title</h1>
+            <p>@ViewBag.Description</p>
+            <table id="search-table">
+                <tr>
+                    <td>
+                        <div class="slideshow-container">
+                            <div class="mySlides fade">
+                                <div class="numbertext">1 / 6</div>
+                                <img src="~/MovieImages/crazyrichaassians_image.jpg" class="center" width=600 height=400 />
+
+
+
+                            </div>
+
+
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">2 / 6</div>
+                                <img src="~/MovieImages/babyDriver.jpg" class="center" width=600 height=400 />
+                            </div>
+
+
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">3 / 6</div>
+                                <img src="~/MovieImages/angelhasfallen_movie.jpg" class="center" width=600 height=400 />
+                            </div>
+
+
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">4 / 6</div>
+                                <img src="~/TvSeriesImages/gossip_girl_image.jpg" class="center" width=600 height=400 />
+                            </div>
+
+
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">5 / 6</div>
+                                <img src="~/TvSeriesImages/lie_to_me_seriale.jpg" class="center" width=600 height=400 />
+                            </div>
+
+
+
+                            <div class="mySlides fade">
+                                <div class="numbertext">6 / 6</div>
+                                <img src="~/TvSeriesImages/pretty_little_liars_image.jpg" class="center" width=600 height=400 />
+                            </div>
+                        </div>
+                        <br>
+                        <!-- The dots/circles -->
+                        <div style="text-align:center">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a asp-action="SearchForMovies" asp-controller="Search" class="button button1">Movies</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a asp-action="SearchForTVSeries" asp-controller="Search" class="button button1">TvSeries</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="column-left-right"> </div>
+    </div>
+    <script>
+        var slideIndex = 0;
+        showSlides();
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+</html>

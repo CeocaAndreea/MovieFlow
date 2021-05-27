@@ -1,0 +1,73 @@
+﻿html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url('../Images/26102.jpg');
+}
+
+.backLink {
+    color: white;
+    text-size: 15px;
+    text-decoration-color: black;
+    background-color: gray;
+    text-align: left;
+}
+
+h1 {
+    font-family: Arial;
+    color: white;
+    text-align: left;
+}
+
+th {
+    text-align: center;
+}
+
+td {
+    text-align: center;
+    font-size: 16px;
+    color-white;
+}
+/* Create three equal columns that floats next to each other */
+.column-left-right {
+    float: left;
+    width: 6%;
+    height: 5000px;
+    opacity: .3;
+    background-color: #bbb;
+}
+
+.column-middle {
+    float: left;
+    width: 84%;
+    padding: 10px;
+    height: 5000px;
+    background-color: #aaa;
+}
+
+.AddTomMyListAndReviews {
+    color: red;
+    font-size: 13px;
+}
+
+
+.button {
+    background-color: #125383; /* Blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.button1 {
+    font-size: 15px;
+    width: 160px;
+}

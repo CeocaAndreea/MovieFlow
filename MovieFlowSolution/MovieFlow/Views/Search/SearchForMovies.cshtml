@@ -1,0 +1,143 @@
+﻿@model IEnumerable<MovieFlow.Models.MoviesCatalog>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/SearchFormat.css" />
+    <link href="~/App_Themes/SmokeAndGlass/SmokeAndGlass.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+    <div class="row">
+        <div class="column-left-right"></div>
+        <div class="column-middle">
+            <a asp-action="Search" asp-controller="Search" class="button button1">Back to search</a>
+            <h1>@ViewBag.Title</h1>
+            <p>@ViewBag.Description</p>
+            <h5>We have a number of @ViewBag.TotalMovies</h5>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Movie Names.." title="Type in a name">
+
+            <table id="table">
+                <tr class="header">
+                    <th style="width:60%;">
+                        @Html.DisplayNameFor(model => model.MovieName)
+                    </th>
+                    <th style="width:40%;">
+                        @Html.DisplayNameFor(model => model.MovieDescription)
+                    </th>
+                </tr>
+                <tbody>
+                    @foreach (var item in ViewData["moviesCatalog"] as IList<MoviesCatalog>)
+                    {
+                        <tr>
+                            <td>
+                                @item.MovieName
+                                @if (item.MovieName == "Crazy Rich Asians")
+                                {
+                                    <a href="https://youtu.be/ZQ-YX-5bAs0">
+                                        <img src="~/MovieImages/crazyrichaassians_image.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Endless Love")
+                                {
+                                    <a href="https://youtu.be/NTAzn4W48gc">
+                                        <img src="~/MovieImages/endless_movie_image.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Divergent")
+                                {
+                                    <a href="https://youtu.be/Aw7Eln_xuWc">
+                                        <img src="~/MovieImages/divergent_image.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Harry Potter")
+                                {
+                                    <a href="https://youtu.be/VyHV0BRtdxo">
+                                        <img src="~/MovieImages/harry_potter_movie.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Hunger Games")
+                                {
+                                    <a href="https://youtu.be/mfmrPu43DF8">
+                                        <img src="~/MovieImages/hungergames_movie.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Angel has fallen")
+                                {
+                                    <a href="https://youtu.be/isVtXH7n9lI">
+                                        <img src="~/MovieImages/angelhasfallen_movie.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Fast & Furious")
+                                {
+                                    <a href="https://youtu.be/2TAOizOnNPo">
+                                        <img src="~/MovieImages/fast&furious_movie.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Atomic Blonde")
+                                {
+                                    <a href="https://youtu.be/aieQrj9Yy8s">
+                                        <img src="~/MovieImages/atomic_blonde.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Baby Driver")
+                                {
+                                    <a href="https://youtu.be/D9YZw_X5UzQ">
+                                        <img src="~/MovieImages/babyDriver.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "A Simple Favor")
+                                {
+                                    <a href="https://youtu.be/rAqMlh0b2HU">
+                                        <img src="~/MovieImages/a_simple_favor.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Mr. & Mrs. Smith")
+                                {
+                                    <a href="https://youtu.be/CZ0B22z22pI">
+                                        <img src="~/MovieImages/mr-and-mrs-smith.jpg " width=470 height=300 />
+                                    </a>
+                                }
+                                @if (item.MovieName == "Crazy Stupid Love")
+                                {
+                                    <a href="https://youtu.be/CZ0B22z22pI">
+                                        <img src="~/MovieImages/crazystupidlove_image.jpg" width=470 height=300 />
+                                    </a>
+                                }
+                            </td>
+                            <td>
+                                @item.MovieDescription
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="column-left-right"> </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

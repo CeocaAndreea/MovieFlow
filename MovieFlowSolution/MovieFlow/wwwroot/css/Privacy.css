@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-image: url('../Images/26102.jpg');
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center center;
+}
+/* Create three equal columns that floats next to each other */
+.column-left-right {
+    float: left;
+    width: 6%;
+    height: 1902px;
+    opacity: .3;
+    background-color: #bbb;
+}
+
+.column-middle {
+    float: left;
+    width: 87%;
+    padding: 10px;
+    height: 100%;
+    background-color: #aaa;
+}
