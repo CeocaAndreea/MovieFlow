@@ -1,0 +1,137 @@
+﻿@model IEnumerable<MovieFlow.Models.TVSeriesCatalog>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - MovieIt</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/SearchFormat.css" />
+    <link href="~/App_Themes/SmokeAndGlass/SmokeAndGlass.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+
+
+
+<body>
+    <div class="row">
+        <div class="column-left-right"></div>
+        <div class="column-middle">
+            <a asp-action="Search" asp-controller="Search" class="button button1">Back to search</a>
+            <h1>@ViewBag.Title</h1>
+            <p>@ViewBag.Description</p>
+            <h5>We have a number of @ViewBag.TotalTvSeries TvSeries for you.</h5>
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Movie Names.." title="Type in a name">
+            <table id="table">
+                <tr class="header">
+                    <th style="width:60%;">
+                        @Html.DisplayNameFor(model => model.TvSerieName)
+                    </th>
+                    <th style="width:40%;">
+                        @Html.DisplayNameFor(model => model.TvSerieDescription)
+                    </th>
+                </tr>
+                <tbody>
+                    @foreach (var item in ViewData["tvSeriesCatalog"] as IList<TVSeriesCatalog>)
+                    {
+                        <tr>
+                            <td>
+                                @item.TvSerieName
+
+                                @if (item.TvSerieName == "Gossip Girl")
+                                {
+                                    <a href="https://youtu.be/eCg1RN-dyQk">
+                                        <img src="~/TvSeriesImages/gossip_girl_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "The Vampires Diaries")
+                                {
+                                    <a href="https://youtu.be/BmVmhjjkN4E">
+                                        <img src="~/TvSeriesImages/jurnalele_vampirilor_images.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "Pretty Little Liars")
+                                {
+                                    <a href="https://youtu.be/SUO8B47XtGY">
+                                        <img src="~/TvSeriesImages/pretty_little_liars_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "RiverDale")
+                                {
+                                    <a href="https://youtu.be/HxtLlByaYTc">
+                                        <img src="~/TvSeriesImages/riverdale_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "New Amsterdam")
+                                {
+                                    <a href="https://youtu.be/ZvMCbzrToAo">
+                                        <img src="~/TvSeriesImages/new-amsterdam_image.png" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "Teen Wolf")
+                                {
+                                    <a href="https://youtu.be/1rCYDbefnmA">
+                                        <img src="~/TvSeriesImages/teenolf_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "Sherlock Holmes")
+                                {
+                                    <a href="https://youtu.be/IrBKwzL3K7s">
+                                        <img src="~/TvSeriesImages/sherlock_holmes_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "Supernatural")
+                                {
+                                    <a href="https://youtu.be/t-775JyzDTk">
+                                        <img src="~/TvSeriesImages/supernatural_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                                @if (item.TvSerieName == "Hannibal")
+                                {
+                                    <a href="https://youtu.be/Es3B24z8fdA">
+                                        <img src="~/TvSeriesImages/hannibal_image.jpg" width=480 height=300 />
+                                    </a>
+                                }
+                            </td>
+
+                            <td>
+                                @item.TvSerieDescription
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+
+
+        <div class="column-left-right"> </div>
+    </div>
+
+
+
+    <script>
+        function myFunction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table");
+            tr = table.getElementsByTagName("tr");
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0];
+                if (td) {
+                    txtValue = td.textContent || td.innerText;
+                    if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+
+
+
+</body>
+</html>

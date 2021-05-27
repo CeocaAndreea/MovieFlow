@@ -1,0 +1,279 @@
+﻿@model IEnumerable<MovieFlow.Models.MoviesCatalog>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/ViewReviewList.css" />
+    <link href="~/App_Themes/SmokeAndGlass/SmokeAndGlass.css" rel="stylesheet" type="text/css" runat="server" />
+</head>
+<body>
+    <div class="row">
+        <div class="column-left-right"></div>
+        <div class="column-middle">
+            <h1>@ViewBag.Title</h1>
+            <p>@ViewBag.Description</p>
+            <h5>We have a number of @ViewBag.TotalMovies movies for you.</h5>
+            <!--I have created a back button when you enter in reviews-->
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MovieName)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MovieDescription)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MovieBuget)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.MovieYear)
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in ViewData["moviesCatalog"] as IList<MoviesCatalog>)
+                    {
+                        <tr>
+                            <td>
+                                <div id="cellOne">
+                                    <b> @item.MovieName</b>
+                                </div>
+                                @if (item.MovieName == "Crazy Rich Asians")
+                                {
+                                    <a href="https://youtu.be/ZQ-YX-5bAs0">
+                                        <img src="~/MovieImages/crazyrichaassians_image.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Endless Love")
+                                {
+                                    <a href="https://youtu.be/NTAzn4W48gc">
+                                        <img src="~/MovieImages/endless_movie_image.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Divergent")
+                                {
+                                    <a href="https://youtu.be/Aw7Eln_xuWc">
+                                        <img src="~/MovieImages/divergent_image.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Harry Potter")
+                                {
+                                    <a href="https://youtu.be/VyHV0BRtdxo">
+                                        <img src="~/MovieImages/harry_potter_movie.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Hunger Games")
+                                {
+                                    <a href="https://youtu.be/mfmrPu43DF8">
+                                        <img src="~/MovieImages/hungergames_movie.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Angel has fallen")
+                                {
+                                    <a href="https://youtu.be/isVtXH7n9lI">
+                                        <img src="~/MovieImages/angelhasfallen_movie.jpg" width=400 height=250 />
+
+
+
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Fast & Furious")
+                                {
+                                    <a href="https://youtu.be/2TAOizOnNPo">
+                                        <img src="~/MovieImages/fast&furious_movie.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Atomic Blonde")
+                                {
+                                    <a href="https://youtu.be/aieQrj9Yy8s">
+                                        <img src="~/MovieImages/atomic_blonde.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Baby Driver")
+                                {
+                                    <a href="https://youtu.be/D9YZw_X5UzQ">
+                                        <img src="~/MovieImages/babyDriver.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:40%">
+                                        <tr>
+                                            <th>
+                                                <a asp-action="MyList" asp-controller="home" class="button button1" name="buttonAddToList" value="Add to my List"> Add to my List </a>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "A Simple Favor")
+                                {
+                                    <a href="https://youtu.be/rAqMlh0b2HU">
+                                        <img src="~/MovieImages/a_simple_favor.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:50%">
+                                        <tr>
+                                            <th>
+                                                <button onclick="AddToList() ">Add to my list</button>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Mr. & Mrs. Smith")
+                                {
+                                    <a href="https://youtu.be/CZ0B22z22pI">
+                                        <img src="~/MovieImages/mr-and-mrs-smith.jpg " width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:50%">
+                                        <tr>
+                                            <th>
+                                                <button onclick="AddToList() ">Add to my list</button>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                                @if (item.MovieName == "Crazy Stupid Love")
+                                {
+                                    <a href="https://youtu.be/CZ0B22z22pI">
+                                        <img src="~/MovieImages/crazystupidlove_image.jpg" width=400 height=250 />
+                                    </a>
+                                    <table class="AddTomMyListAndReviews" style="width:50%">
+                                        <tr>
+                                            <th>
+                                                <button onclick="AddToList() ">Add to my list</button>
+                                            </th>
+                                            <th>
+                                                <a asp-action="ReviewList" asp-controller="Review" class="button button1">Reviews</a>
+                                            </th>
+                                        </tr>
+                                    </table>
+                                }
+                            </td>
+                            <td>
+                                @item.MovieDescription
+                            </td>
+                            <td>
+                                @item.MovieBuget
+                            </td>
+                            <td>
+                                @item.MovieYear
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <h1>My Movie List</h1>
+            <table id="MyMovieList">
+                <tr>
+                    <th> Movie Name</th>
+                </tr>
+            </table>
+        </div>
+        <div class="column-left-right"></div>
+    </div>
+
+
+    <script>
+        function AddToList() {
+            alert("You just Added the movie ");
+            var table = document.getElementById("MyMovieList");
+            var x = document.getElementById("MyMovieList").rows.length;
+            var row = table.insertRow(x);
+            var cell1 = row.insertCell(0);
+            cell1.innerHTML = document.getElementById("cellOne").innerHTML;
+
+        }
+    </script>
+
+</body>
+</html>
